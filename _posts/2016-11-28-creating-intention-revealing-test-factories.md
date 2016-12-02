@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Creating intention revealing test factories"
-date: 2016-11-10 12:00:00
+date: 2016-11-28 12:00:00
 categories: Software_Engineering
 featured_image: /images/cover.jpg
 ---
