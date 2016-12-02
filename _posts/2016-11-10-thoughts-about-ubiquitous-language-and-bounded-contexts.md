@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Ubiquitous Language in Domain-Driven Design"
+title: "Thoughts about Ubiquitous Language and Bounded-Contexts"
 date: 2016-11-10 12:00:00
 categories: Software_Engineering
 featured_image: /images/cover.jpg
