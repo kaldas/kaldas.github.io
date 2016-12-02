@@ -11,3 +11,7 @@ I've been creating test factories and I thought my code was pretty good. Recentl
 Below is an example of a test factory before being refactored:
 
 <script src="https://gist.github.com/kaldas/227b96dadf074b9ca42f62aa57462d52.js"></script>
+
+Below is an example of an execution of this factory:
+
+![test factory example]({{ site.url }}/images/test_factory_example.png)
