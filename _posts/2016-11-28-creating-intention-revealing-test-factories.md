@@ -16,4 +16,4 @@ Below is an example of an execution of this factory:
 
 ![test factory example]({{ site.url }}/images/idverificationtest.PNG)
 
-Now should I use the Builder pattern in every test factory? Probably not but when dealing with complex objects it is definitely a good idea.
+Now should I use the Builder pattern in every test factory? Probably not but when dealing with creating complex objects it is definitely a good idea.
