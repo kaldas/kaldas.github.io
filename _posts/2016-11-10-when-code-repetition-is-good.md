@@ -6,8 +6,6 @@ categories: Software_Engineering
 featured_image: /images/cover.jpg
 ---
 
-When code repetition is good
-
 Many years ago I found a very wise general rule called DRY. This is an acronym for Don't-Repeat-Yourself. It's easy to see why repeating behaviour around a code base will make it rigid to change. So code repetition is completely bad? Well, not entirely and let's find out why...
 
 ## It's always part of the development process
