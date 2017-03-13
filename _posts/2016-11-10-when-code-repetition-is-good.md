@@ -24,7 +24,7 @@ Now don't get me wrong because shared code does work very well for internal tech
 
 The fundamental point of the strategic patterns of DDD is that the Model is a representation of the Ubiquitous Language. So what does this mean? It means that every Bounded Context will have its own Ubiquitous Language.
 
-This means that every bounded context will have its own building blocks i.e entities, aggregates and value objects. But this still leaves us with our DTO's that live in the Adapter layer - outside our core domain.
+Therefore technically every bounded context will have its own building blocks i.e entities, aggregates and value objects. But this still leaves us with our DTO's that live in the Adapter layer - outside our core domain.
 
 Not long ago I was in a team creating a new fraud detection product for banks. There was a lot of repetition in Data Transfer Objects (DTO's) so there was the obvious desire of creating a generic DTO package. Would that have been a good idea?
 
