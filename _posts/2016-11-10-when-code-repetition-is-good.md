@@ -16,9 +16,9 @@ In the classic book Refactoring by Martin Fowler and Kent Beck, the authors prop
 
 This is something that has been biting me on daily basis. I have been working with some Azure cloud microservices which all derive from the same service. This is done via a project reference. The problem arises when Domain specific behaviour is necessary. 
 
-![microservices extended from base]({{ site.url }}/images/service_base.PNG)
+![microservices extended from base]({{ site.url }}/images/service_base.png)
 
-An example of the above is implementing different strategies for circuit breakers. Should they go on the upstream code? Dependency Injection? But some Azure libraries haven't got interfaces. Inject wrappers? Extension methods? Very easily something simple became extremely complex...
+What happens given the above architecture when we try to implement different strategies for circuit breakers? Should they go on the upstream code? Dependency Injection? Create wrappers? Extension methods? Very easily something simple became extremely complex...
 
 Now don't get me wrong because shared code does work very well for internal technical tasks, like Logging or accessing a NoSQL database but when Domain specific behaviour is involved, it doesn't work well.
 
