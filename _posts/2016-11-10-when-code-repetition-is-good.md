@@ -10,11 +10,13 @@ Many years ago I found a very wise general rule called DRY. This is an acronym f
 
 ## It's always part of the development process
 
-In the classic book Refactoring by Martin Fowler and Kent Beck, the authors propose that repetition is the foundation of all abstractions. This is because repetition indicates the right moment of when to jump from the simplest procedural code to an abstraction. The problem of introducing design patterns head first is that usually, it overcomplicates what could have been a simple, elegant, intention revealing solution.
+In the classic book Refactoring by Martin Fowler and Kent Beck, the authors propose that repetition is the foundation of all abstractions. This is because repeated code indicates the right moment of when to jump from the simplest procedural code to an abstraction. The problem of introducing design patterns head on is that usually, it overcomplicates what could have been a simple, elegant, intention revealing solution.
 
 ## Shared code has side effects on Domain specific behaviour
 
 This is something that has been biting me on daily basis. I have been working with some Azure cloud microservices which all derive from the same service. This is done via a project reference. The problem arises when Domain specific behaviour is necessary. 
+
+![microservices extended from base]({{ site.url }}/images/service_base.PNG)
 
 An example of the above is implementing different strategies for circuit breakers. Should they go on the upstream code? Dependency Injection? But some Azure libraries haven't got interfaces. Inject wrappers? Extension methods? Very easily something simple became extremely complex...
 
