@@ -10,6 +10,8 @@ Many years ago I found a very wise general rule called DRY. This is an acronym f
 
 ## It's always part of the development process
 
+![microservices extended from base]({{ site.url }}/images/refactoringBookCover.png)
+
 In the classic book Refactoring by Martin Fowler and Kent Beck, the authors propose that repetition is the foundation of all abstractions. This is because repeated code indicates the right moment of when to jump from the simplest procedural code to an abstraction. The problem of introducing design patterns head on is that usually, it overcomplicates what could have been a simple, elegant, intention revealing solution.
 
 ## Shared code has side effects on Domain specific behaviour
