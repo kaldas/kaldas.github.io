@@ -26,15 +26,18 @@ Now don't get me wrong because shared code does work very well for internal tech
 
 ## Shared code can create Boundary corruption
 
-The fundamental point of the strategic patterns of DDD is that the Model is a representation of the Ubiquitous Language. So what does this mean? It means that every Bounded Context will have its own Ubiquitous Language.
+The fundamental point of the strategic patterns of DDD is that the Model is a representation of the Ubiquitous Language. So what does this mean? It means that every Bounded Context will have its own Ubiquitous Language. Therefore every bounded context will have its own building blocks i.e entities, aggregates and value objects. This is to avoid what is called Boundary corruption.
 
-Therefore technically every bounded context will have its own building blocks i.e entities, aggregates and value objects. But this still leaves us with our DTO's that live in the Adapter layer - outside our core domain.
+![bounded context anti corruption]({{ site.url }}/images/boundedContextAntiCorruption.png)
+
+In the example above both bounded contexts have a Payment and a Customer entity but they are separated by an anti-corruption layer. We can see that a Customer in the Payments bounded context has a Billing Address whilst in the Shipping bounded context it has a Delivery Address. If the Customer entity was shared between bounded contexts then domain corruption would occur. This is why in my opinion the ubiquitous language, the domain model and the anti-corruption pattern are the most important patterns in domain driven design.
+
+But this still leaves us with our DTO's that live in the Adapter layer - outside our core domain.
 
 Not long ago I was in a team creating a new fraud detection product for banks. There was a lot of repetition in Data Transfer Objects (DTO's) so there was the obvious desire of creating a generic DTO package. Would that have been a good idea?
 
-It depends on how you are mapping your DTO's to your domain. In my experience, DTO's are a great place to perform Domain specific validation before it's mapped into the Domain. This wouldn't be so easy when using a generic library.
+It depends on how you are mapping your DTO's to your domain. In my experience, DTO's are a great place to perform Domain specific validation before it's mapped into the Domain. This wouldn't be so easy when using a generic shared library.
 
 ## In the end
 
-There is no absolute right or wrong and its best to do what makes sense given the situation.
-
+Shared code between projects is good for technical tests (i.e connecting to Azure databases or Logging). Shared code between projects is bad when there is domain specifc behaviour involved. Shared code within the same project is generally always good - even if it contains domain specific behaviour.
