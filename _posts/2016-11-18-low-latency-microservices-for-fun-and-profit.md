@@ -21,9 +21,9 @@ Fortunately just like your Microservices don't just fail, but instead, they hand
 
 ![access by value pattern]({{ site.url }}/images/byvalue.png)
 
-Above is an example of a microservice that reads messages from a queue and then maps the data into a sql database.
+Above is an example of a microservice that reads messages from a queue and then maps the data into a sql database. This is the simplest way of feeding a microservice with data. You give it the data it needs and you let it do its work. 
 
-This is the simplest way of feeding a microservice with data. You give it the data it needs and you let it do its work. The problem of this approach is - if your service is asynchronous like in the picture above then you never know when its going to run and pick up the message from the queue. What if the data in the message has changed by the time the service runs? The problem of the Access by Value Pattern is that it sacrifices Consistency.
+The problem of this approach is - if your service is asynchronous like in the picture above then you never know when its going to run and pick up the message from the queue. What if the data in the message has changed by the time the service runs? The problem of the Access by Value Pattern is that it sacrifices Consistency.
 
 ## Access by Reference Pattern
 
