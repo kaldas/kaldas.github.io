@@ -35,4 +35,6 @@ Now consistency has been maintained and the service will always have the latest 
 
 ## Access by Freshness Pattern
 
+Now comes how to make the best of both worlds. 
+
 Probably the first thing everyone learns about Microservices is get rid of the monolithic database.
