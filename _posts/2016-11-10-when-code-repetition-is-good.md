@@ -38,6 +38,6 @@ Not long ago I was in a team creating a new fraud detection product for banks. T
 
 It depends on how you are mapping your DTO's to your domain. In my experience, DTO's are a great place to perform Domain specific validation before it's mapped into the Domain. This wouldn't be so easy when using a generic shared library.
 
-## In the end
+## Final thoughts
 
 Shared code between projects is good for technical tasks (i.e connecting to Azure databases or Logging). Shared code between projects is bad when there is domain specifc behaviour involved. Shared code within the same project is generally good - even if it contains domain specific behaviour.
