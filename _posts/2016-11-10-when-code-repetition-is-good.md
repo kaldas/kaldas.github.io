@@ -40,4 +40,4 @@ It depends on how you are mapping your DTO's to your domain. In my experience, D
 
 ## In the end
 
-Shared code between projects is good for technical tests (i.e connecting to Azure databases or Logging). Shared code between projects is bad when there is domain specifc behaviour involved. Shared code within the same project is generally always good - even if it contains domain specific behaviour.
+Shared code between projects is good for technical tasks (i.e connecting to Azure databases or Logging). Shared code between projects is bad when there is domain specifc behaviour involved. Shared code within the same project is generally good - even if it contains domain specific behaviour.
