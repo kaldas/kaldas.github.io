@@ -37,6 +37,5 @@ Now consistency has been maintained and the service will always have the latest 
 
 ![access by value pattern]({{ site.url }}/images/byfreshness.png)
 
-Now comes how to make the best of both worlds. THis 
+Now comes how to have the best of both worlds. This time our microservice will be fed with both the value of the data and also a reference to it. We then set an amount of time for how long the value of the data is fresh. If the data isn't fresh we get the latest version using the reference.
 
-Probably the first thing everyone learns about Microservices is get rid of the monolithic database.
