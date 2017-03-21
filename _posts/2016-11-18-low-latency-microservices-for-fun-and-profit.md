@@ -17,7 +17,9 @@ Indeed I have and it's easy to understand why. How long does it take to read som
 It's an acronym created by a computer science professor. It stands for Consistency, Availability and Partitioning. The theorem states that it is impossible for a distributed system to provide all of these three guarantees simultaneously. Now giving that we are talking about Microservices we are already picking Partition out of the CAP theorem. We can only choose from Availability and Partitioning or Consistency and Partitioning.
 
 Consistency: every request receives the most recent write or an error
+
 Availability: every request receive a non-error response
+
 Partitioning: the system continues to operate if network errors between nodes occur
 
 ## Access by Value Pattern
