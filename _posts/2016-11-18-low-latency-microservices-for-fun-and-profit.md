@@ -6,19 +6,19 @@ categories: Software_Engineering
 featured_image: /images/cover.jpg
 ---
 
-When I was young I thought the fastest applications in the universe were coded in Assembly and C by mythical bearded software engineers. In reality, a visual basic application making the right use of the CAP theorem can be a lot faster than any Asm, C or C++ application.
+When I was young I thought the fastest applications in the universe were coded in Assembly and C by mythical bearded software engineers. In reality, a visual basic application making the right use of databases can be a lot faster than any Asm, C or C++ application.
 
 ## Did I just say Visual Basic can be faster than C++?
 
 Indeed I have and it's easy to understand why. How long does it take to read something from the processor cache? Not much, right? This is where assembly, c and perhaps c++ to some extent could optimise the execution time. Now how long does it take to open a TCP connection, authenticate to a database, run a query and retrieve some data? Well, a lot more than reading from cache or ram. The database I/O is everything in low latency and this post is about how to get rid of I/O from your Microservices.
 
-## So what is the CAP theorem?
+## Understanding the CAP theorem
 
-It's an acronym created by a computer science professor. It stands for Consistency, Availability and Partitioning. The theorem states that it is impossible for a distributed system to provide all of these three guarantees simultaneously. Now giving that we are talking about Microservices we are already picking Partition out of the CAP theorem. So, in reality, we can only choose from Availability and Partitioning or Consistency and Partitioning.
+It's an acronym created by a computer science professor. It stands for Consistency, Availability and Partitioning. The theorem states that it is impossible for a distributed system to provide all of these three guarantees simultaneously. Now giving that we are talking about Microservices we are already picking Partition out of the CAP theorem. We can only choose from Availability and Partitioning or Consistency and Partitioning.
 
 Consistency: every request receives the most recent write or an error
 Availability: every request receive a non-error response
-Partitioning: the system continues to operate if network communicate between nodes occur
+Partitioning: the system continues to operate if network errors between nodes occur
 
 ## Access by Value Pattern
 
