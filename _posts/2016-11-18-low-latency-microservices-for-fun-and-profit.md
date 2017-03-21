@@ -5,6 +5,7 @@ date: 2016-11-18 12:00:00
 categories: Software_Engineering
 featured_image: /images/cover.jpg
 ---
+
 When I was young I thought the fastest applications in the universe were coded in Assembly and C by mythical bearded software engineers. In reality, a visual basic application making the right use of the CAP theorem can be a lot faster than any Asm, C or C++ application.
 
 ## Did I just say Visual Basic can be faster than C++?
@@ -13,9 +14,11 @@ Indeed I have and it's easy to understand why. How long does it take to read som
 
 ## So what is the CAP theorem?
 
-It's an acronym created by a computer science professor. It stands for Consistency, Availability and Partitioning. The theorem states that it is impossible for a distributed system to provide all of these three guarantees simultaneously. Now giving that we are talking about Microservices we are already picking Partition in the CAP theorem. So this leaves with either Consistency or Availability.
+It's an acronym created by a computer science professor. It stands for Consistency, Availability and Partitioning. The theorem states that it is impossible for a distributed system to provide all of these three guarantees simultaneously. Now giving that we are talking about Microservices we are already picking Partition out of the CAP theorem. So, in reality, we can only choose from Availability and Partitioning or Consistency and Partitioning.
 
-Fortunately just like your Microservices don't just fail, but instead, they handle fail, you can have Microservices that handle the CAP theorem differently given the situation. Now let's look at some cool design patterns that touch the CAP theorem.
+Consistency: every request receives the most recent write or an error
+Availability: every request receive a non-error response
+Partitioning: the system continues to operate if network communicate between nodes occur
 
 ## Access by Value Pattern
 
@@ -39,3 +42,6 @@ Now consistency has been maintained and the service will always have the latest 
 
 Now comes how to have the best of both worlds. This time our microservice will be fed with both the value of the data and also a reference to it. We then set an amount of time for how long the value of the data is fresh. If the data isn't fresh we get the latest version using the reference.
 
+## Final thoughts
+
+Fortunately just like your Microservices don't just fail, but instead, they handle fail, you can have Microservices that handle the CAP theorem differently given the situation. In this post, we looked at some cool design patterns and thus how we can cut down on the database I/O.
