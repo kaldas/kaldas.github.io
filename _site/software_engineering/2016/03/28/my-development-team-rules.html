@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>~/RodCaldas</title>
+  <meta name="viewport" content="width=device-width">
+
+  <!-- syntax highlighting CSS -->
+  <link rel="stylesheet" href="/css/syntax.css">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/css/reset.css">
+  <link rel="stylesheet" href="/css/main.css">
+  <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+
+  <!-- Fonts -->
+  <link href='http://fonts.googleapis.com/css?family=Bitter:400,700,400italic|Open+Sans:400italic,600italic,400,600' rel='stylesheet' type='text/css'>
+</head>
+<body>
+  <header style="background-image: url(/images/cover.jpg);">
+  <div class="container post-container">
+    <a href="/" class="home_button"></a>
+    <div class="inner-container">
+      <h1>The 6 golden rules of my development team</h1>
+      <ul class="meta">
+        <li>
+          <span>
+            Published
+          </span>
+          28 Mar 2016
+        </li>
+        <li>
+          <span>
+            Category
+          </span>
+          software_engineering
+        </li>
+      </ul>      
+    </div>
+    <ul class="pagination">
+      
+        <li class="previous">
+          <a href="/clean_code/2016/03/18/the-story-of-when-i-met-uncle-bob.html">
+            Previous
+          </a>
+        </li>
+      
+      
+      <li class="next">
+        <a href="/software_engineering/2016/04/03/the-actual-cost-of-embracing-to-pair-programming.html">
+          Next
+        </a>
+      </li>
+      
+    </ul>
+  </div>
+</header>
+
+<article>
+  <div class="container">
+    <p>This is the magna carta of my development team. These are the 6 golden rules that should never be broken. I&#39;ve been a professional software engineer for the last 9 years and these are the rules I put together for my team.</p>
+
+<h2>1. Always do Test Driven Development</h2>
+
+<p>Perhaps this would be a good time to see my <a href="http://www.slideshare.net/RoddersCaldas/whytdd-59075990">Lightning talk: Why you should do TDD</a></p>
+
+<h2>2. Always do Design by Contract</h2>
+
+<p>I also have a <a href="http://www.slideshare.net/RoddersCaldas/dbc-presentation">Lightning talk: Why you are not doing Design by Contract?</a></p>
+
+<h2>3. Always do your Baby Steps</h2>
+
+<p>This is a concept proposed by Kent Beck as part of TDD. The idea is that the developer should code the simplest solution to make the test pass hence the name baby steps. This is to avoid adding unnecessary complexity to the code. This topic is further enhanced by <a href="http://martinfowler.com/bliki/BeckDesignRules.html">Kent Beck&#39;s 4 rules of simple design</a>. I made Baby Steps a rule by itself because when most developers think they are doing TDD they are not actually doing quality TDD.</p>
+
+<h2>4. Never leave Continuous Integration broken</h2>
+
+<p>It&#39;s the middle of the summer, half of your colleguages are leaving the office to have drinks in the southbank, the other half of your colleagues left early to get some sun in clapham common... but you can&#39;t leave until you get C.I green again. Sounds hard? This is what it means to be a professional software engineer that takes pride and responsibility in their work. Obviously if you did your baby steps correctly and made loads of tiny commits instead of a big commit in the end of the day then this shouldn&#39;t take long.</p>
+
+<h2>5. Never use any mocking outside of tests</h2>
+
+<p>User stories are always vertical (i.e from end to end). I worked with a contractor that would cut down the scope of his tasks by delivering the presentation layer with a mocked backend. Not only would the client think the team had accomplished much more than it had actually did, but when the actual backend was finished, the requirements would change and the presentation layer had to be reworked.</p>
+
+<h2>6. Never add brand new code containing Technical Debt</h2>
+
+<p>Don&#39;t get me wrong here. There is good and bad technical debt and <a href="http://martinfowler.com/bliki/TechnicalDebtQuadrant.html">Martin Fowler has a very good article about this</a>. This rule is about the &quot; I couldn&#39;t be bothered with quality &quot; technical debt. On several occasions I had developers show me the features that they had just created and when I seen code that didn&#39;t seem right they said &quot; we&#39;ll add it to the technical debt backlog &quot;. Now hold on there, mate, you are on a greenfield project and nobody is putting pressure on you to release. Just because you have a backlog for technical debt tickets it doesn&#39;t mean you have a license to write rubbish code.</p>
+
+  </div>
+</article>
+
+</body>
+</html>
