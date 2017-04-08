@@ -1,12 +1,12 @@
 ---
 layout: post
-title: "Low latency Microservices for fun and profit"
+title: "Creating fast Microservices and the CAP theorem"
 date: 2016-11-18 12:00:00
 categories: Software_Engineering
 featured_image: /images/cover.jpg
 ---
 
-When I was young I thought the fastest applications in the universe were coded in Assembly and C by mythical bearded software engineers. In reality, a visual basic application making the right use of databases can be a lot faster than any Asm, C or C++ application.
+When I was young I thought the fastest applications in the universe were coded in Assembly, C and C++ by mythical bearded software engineers. In reality, a visual basic application making smart decisions about when to do I/O calls can be faster than any C or C++ application. Let's find out why I/O time is the foundation of low latency.
 
 ## Did I just say Visual Basic can be faster than C++?
 
