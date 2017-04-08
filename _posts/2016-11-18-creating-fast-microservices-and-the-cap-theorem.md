@@ -6,7 +6,7 @@ categories: Software_Engineering
 featured_image: /images/cover.jpg
 ---
 
-When I was young I thought the fastest applications in the universe were coded in Assembly, C and C++ by mythical bearded software engineers. In reality, a visual basic application making smart decisions about when to do I/O calls can be faster than any C or C++ application. Let's find out why I/O time is the foundation of low latency.
+When I was young I thought the fastest applications in the universe were coded in Assembly, C and C++ by mythical bearded software engineers. In reality, a visual basic application making smart decisions about when to do I/O calls can be faster than any C application that does too much I/O.
 
 ## Did I just say Visual Basic can be faster than C++?
 
