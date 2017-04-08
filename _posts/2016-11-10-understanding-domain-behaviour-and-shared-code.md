@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "When code repetition is good"
+title: "Understanding Domain behaviour and Shared code"
 date: 2016-11-10 12:00:00
 categories: Software_Engineering
 featured_image: /images/cover.jpg
