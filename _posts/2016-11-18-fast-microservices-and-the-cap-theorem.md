@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Creating fast Microservices and the CAP theorem"
+title: "Fast Microservices and the CAP theorem"
 date: 2016-11-18 12:00:00
 categories: Software_Engineering
 featured_image: /images/cover.jpg
