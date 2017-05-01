@@ -1,22 +1,22 @@
 ---
 layout: post
-title: "Understanding Domain behaviour and Shared code"
+title: "Understanding Cross-cutting concerns and Domain code"
 date: 2016-11-10 12:00:00
 categories: Software_Engineering
 featured_image: /images/cover.jpg
 ---
 
-Many years ago I found a very wise general rule called DRY. This is an acronym for Don't-Repeat-Yourself. It's easy to see why repeating behaviour around a code base will make it rigid to change. So code repetition is completely bad? Well, not entirely and let's find out why...
+Many years ago I found a wise general rule called DRY. This is an acronym for Don't-Repeat-Yourself. It's easy to see why repeating behaviour around a code base will make it rigid to change. The outcome of doing DRY is that we end up with a lot of abstractions that can be shared and is this always a good idea? Well, not entirely and let's find out why...
 
-## Duplicated code is part of the development process
+## Understanding Cross-cutting concerns
 
-![refactoring book cover]({{ site.url }}/images/CoverRefactoringBook.png)
+They are the concerns that are shared throughout the application. They are most likely technical tasks and this is where having shared libraries with their own release pipeline worked really well for me.
 
-In the classic book Refactoring by Martin Fowler and Kent Beck, the authors propose that repetition is the foundation of all abstractions. This is because repeated code indicates the right moment of when to jump from the simplest procedural code to an abstraction. The problem of introducing design patterns head on is that usually, it overcomplicates what could have been a simple, elegant, intention revealing solution.
+When I joined WorldRemit the first task that I picked up involved changing how Logging was performed. Now tweaking Log4net was easy. The hard part of distributing the changes to some 20 projects. This is when we created a NuGet package that could be easily distributed and versioned. We ended up creating more of these packages and other teams started using and contributing to them. Alas identifying our cross-cutting concerns was very helpful to us.
 
-## Shared code has side effects on Domain specific behaviour
+## Understanding Domain concerns
 
-This is something that has been biting me on daily basis. I have been working with some Azure cloud microservices which all derive from the same service. This is done via a project reference. The problem arises when Domain specific behaviour is necessary. 
+Not all technical tasks are cross-cutting concerns and this is something that has been biting me on daily basis. I have been working with some cloud microservices which all derive from the same base service. This is done via a project reference. The problem comes when Domain specific behaviour is necessary. 
 
 ![microservices extended from base]({{ site.url }}/images/service_base.png)
 
@@ -37,6 +37,12 @@ But this still leaves us with our DTO's that live in the Adapter layer - outside
 Not long ago I was in a team creating a new fraud detection product for banks. There was a lot of repetition in Data Transfer Objects (DTO's) so there was the obvious desire of creating a generic DTO package. Would that have been a good idea?
 
 It depends on how you are mapping your DTO's to your domain. In my experience, DTO's are a great place to perform Domain specific validation before it's mapped into the Domain. This wouldn't be so easy when using a generic shared library.
+
+## Simple procedural code is part of the development process
+
+![refactoring book cover]({{ site.url }}/images/CoverRefactoringBook.png)
+
+In the book Refactoring by Martin Fowler and Kent Beck, the authors propose that repetition is the foundation of all abstractions. This is because repeated code indicates the right moment of when to jump from the simplest procedural code to an abstraction. The problem of introducing design patterns head on is that usually, it overcomplicates what could have been a simple, elegant, intention revealing solution.
 
 ## Final thoughts
 
