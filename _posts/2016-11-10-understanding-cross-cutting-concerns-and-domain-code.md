@@ -38,7 +38,7 @@ Not long ago I was in a team creating a new fraud detection product for banks. T
 
 It depends on how you are mapping your DTO's to your domain. In my experience, DTO's are a great place to perform Domain specific validation before it's mapped into the Domain. This wouldn't be so easy when using a generic shared library.
 
-## Simple procedural code is part of the development process
+## Understanding the value of simple procedural code
 
 ![refactoring book cover]({{ site.url }}/images/CoverRefactoringBook.png)
 
