@@ -2,7 +2,7 @@
 layout:     post
 title:      Creating intention revealing test factories
 author:     Rodrigo Caldas
-tags: 		Microservices DDD Cap theorem
+tags: 		TDD Test Factory Builder Pattern
 category:  software-engineering
 ---
 <!-- Start Writing Below in Markdown -->
