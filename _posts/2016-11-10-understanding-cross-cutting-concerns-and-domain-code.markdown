@@ -2,7 +2,7 @@
 layout:     post
 title:      Understanding Domain and Cross-cutting concerns
 author:     Rodrigo Caldas
-tags: 		dry ddd software engineering
+tags: 		DRY principle ddd software engineering
 category:  software-engineering
 ---
 <!-- Start Writing Below in Markdown -->
@@ -23,13 +23,13 @@ When I joined WorldRemit the first task that I picked up involved changing how L
 
 Below is how our pipeline looks like in Team City:
 
-![microservices extended from base]({{ site.url }}/images/pipeline.png)
+![microservices extended from base]({{ site.url }}/img/pipeline.png)
 
 ## Understanding Domain concerns
 
 Not all technical tasks are cross-cutting concerns and this is something that has been biting me on daily basis. I have been working with some cloud microservices which all derive from the same base service. This is done via a project reference. The problem comes when Domain specific behaviour is necessary. 
 
-![microservices extended from base]({{ site.url }}/images/service_base.png)
+![microservices extended from base]({{ site.url }}/img/service_base.png)
 
 What happens given the above architecture when we try to implement different strategies for circuit breakers? Should they go on the upstream code? Dependency Injection? Create wrappers? Extension methods? So very easily something simple became complex...
 
