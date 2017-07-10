@@ -6,7 +6,13 @@ categories: Software_Engineering
 featured_image: /images/cover.jpg
 ---
 
-Many years ago I found a wise general rule called DRY. This is an acronym for Don't-Repeat-Yourself. It's easy to see why repeating behaviour around a code base will make it rigid to change. The outcome of doing DRY is that we end up with a lot of abstractions that can be shared and is this always a good idea? Well, not entirely and let's find out why...
+Many years ago I found a very wise principle called DRY. This is an acronym for Don't-Repeat-Yourself. It's easy to see why repeating behaviour around a code base will make it rigid to change. The outcome of doing DRY is that we end up with a lot of abstractions that can be shared and is this always a good idea? Well, not entirely and let's find out why...
+
+## Why simple procedural code is important
+
+There is a book that I like very much called "Refactoring: Improving the Design of Existing Code" by Martin Fowler and Kent Beck. This book will show you some smells and how you can refactor them using design patterns and this is great but this is not what I like the most about this book. The best part of this book for me is when they teach you how to think. My favourite part is when they discuss the right moment of introducing a design pattern. They propose that code repetition is the foundation of all abstractions. This is because repeated code indicates the right moment of when to jump from the simplest procedural code to an abstraction. I believe this book was written in the 1990s before TDD was invented so if you are doing proper TDD i.e the simplest code that will make the test pass then this should be happening naturally. The problem of introducing design patterns head on is that usually, it overcomplicates what could have been a simple, elegant, intention revealing solution.
+
+Now if you did all of the above correctly you should then be getting some repeated code. When and how should you DRY it? This is where Domain Driven Design can help you. In DDD there is a concept of a Cross-cutting concerns and Domain concerns. In the rest of this post we will look at both of them.
 
 ## Understanding Cross-cutting concerns
 
@@ -27,10 +33,6 @@ Not all technical tasks are cross-cutting concerns and this is something that ha
 What happens given the above architecture when we try to implement different strategies for circuit breakers? Should they go on the upstream code? Dependency Injection? Create wrappers? Extension methods? So very easily something simple became complex...
 
 Now don't get me wrong because shared code does work very well for internal technical tasks, like Logging or accessing a NoSQL database but when Domain specific behaviour is involved, it doesn't work well.
-
-## Understanding the value of simple procedural code
-
-In the book Refactoring by Martin Fowler and Kent Beck, the authors propose that code repetition is the foundation of all abstractions. This is because repeated code indicates the right moment of when to jump from the simplest procedural code to an abstraction. The problem of introducing design patterns head on is that usually, it overcomplicates what could have been a simple, elegant, intention revealing solution.
 
 ## Final thoughts
 
