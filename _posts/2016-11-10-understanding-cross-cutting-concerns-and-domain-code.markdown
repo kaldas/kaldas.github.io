@@ -3,7 +3,6 @@ layout:     post
 title:      Understanding Domain and Cross-cutting concerns
 author:     Rodrigo Caldas
 tags: 		dry ddd software engineering
-subtitle:  	Many years ago I found a very wise principle called DRY. This is an acronym for Don't-Repeat-Yourself. It's easy to see why repeating behaviour around a code base will make it rigid to change. The outcome of doing DRY is that we end up with a lot of abstractions that can be shared and is this always a good idea? Well, not entirely and let's find out why...
 category:  software-engineering
 ---
 <!-- Start Writing Below in Markdown -->
