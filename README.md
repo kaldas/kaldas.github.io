@@ -1,36 +1,28 @@
-Strange Case
-============
+# Project Pages
 
-Strange Case is a simple, clean and responsive theme for Jekyll. 
+Project Pages is Jekyll Template specifically geared towards collaborative science. For more information, click [here](https://github.com/projectpages/project-pages/wiki/).
 
+# Nav Bar Jumbles
 
-### Demo 
+If you have seemingly random pages popping up on your Nav Bar recently, this is due to the fact that GitHub/Jekyll changed a fundemental rule they used to render pages. 
 
-[Demo](http://thephuse.github.io/strange_case/)
+## CAUSE:
+It used to be that if a markdown file didn't have `---` frontmatter at the beginning, it wasn't rendered as a page. This was changed very recently (like in the last 2 days) so that every markdown file anywhere no matter what gets rendered as a page.  
 
-### Overview 
+## FIX:
 
-* Fixed Sidebar with cover image
-* Minimal design 
-* Easy to configure
-* Browser support: Latest releases of Chrome, Safari, Firefox, Mobile Safari and IE 9+.
+1) Go to:
 
-### Screenshots
+`project-pages/plugin/projector/` or `yourreponame/plugin/projector/` and delete the `README.md` file. This can be done graphically for the non-Git-savvy by simply going to your:
 
-![screenshot](/images/screenshot1.png)
-![screenshot](/images/screenshot2.png)
+GitHub account -> Your Profile -> Repositories -> Project-Pages/Your Repo -> Plugin -> projector 
 
-### Setup
+and clicking on the files, then clicking on the "thrash can / delete this file" icon on the top right corner of the file.
 
-1. Install [Jekyll](http://jekyllrb.com/)
-2. Fork or [download](https://github.com/thephuse/strange_case) this theme repo
-3. Edit the `_config.yml` file (if you make any additional changes to this file, you will need to stop and restart your command in the next step)
-4. From your command line, switch to your site directory and build using `jekyll serve`
-5. Site will be accessible by viewing http://localhost:4000/strange_case/
+2) Go to:
 
-### Download
+`project-pages/css/theme/` or `yourreponame/css/theme/` and delete the `README.md` file. This can be done graphically for the non-Git-savvy by simply going to your:
 
-[Download](https://github.com/thephuse/strange_case)
+GitHub account -> Your Profile -> Repositories -> Project-Pages/Your Repo -> Plugin -> projector 
 
-### License
-* [MIT](http://opensource.org/licenses/MIT)
+and clicking on the files, then clicking on the "thrash can / delete this file" icon on the top right corner of the file.
