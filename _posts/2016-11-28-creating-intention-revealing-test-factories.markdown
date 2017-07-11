@@ -1,7 +1,7 @@
 ---
 layout:     post
 title:      Creating intention revealing test factories
-author:     Rodrigo Caldas
+author:     Rod Caldas
 tags: 		TDD Test Factory Builder Pattern
 category:  software-engineering
 ---
