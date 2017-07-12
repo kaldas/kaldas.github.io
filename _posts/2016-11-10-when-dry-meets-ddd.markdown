@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      Understanding Domain and Cross-cutting concerns
+title:      When DRY meets DDD
 author:     Rod Caldas
 tags: 		DRY principle ddd software engineering
 category:  software-engineering
