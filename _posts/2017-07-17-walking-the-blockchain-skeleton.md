@@ -21,8 +21,9 @@ They are a payment scheme built on top of blockchain technology where financial 
 
 ## The Walking Skeleton
 
-According to Alistair Cockburn who coined the term:
+As our hackathon project we decided to present an end to end integration of our platform with stellar. We had a large pool of developers in our group so we decided to go ahead with a walking skeleton. So what is a walking skeleton?
 
-> "A Walking Skeleton is a tiny implementation of the system that performs a small end-to-end function. It need not use the final architecture, but it should link together the main architectural components. The architecture and the functionality can then evolve in parallel."
+> "A Walking Skeleton is a tiny implementation of the system that performs a small end-to-end function. It need not use the final architecture, but it should link together the main architectural components. The architecture and the functionality can then evolve in parallel." - Alistair Cockburn
 
-This is a term coined by Alistair Cockburn to describe the smallest implementation of an end to end functionality in a system.
+This meant creating an api to serve as an adapter between our domain and stellar, a web page where our agents could keep track of debits issued through stellar and another web page where our partners could view credits to their wallets. We also had an android developer in our team so we hooked this up to our android app for demonstration purposes and I was very satisfied with the outcome. Our project finished in the top 3 with the other two being related to fraud detection and fintech aid.
+
