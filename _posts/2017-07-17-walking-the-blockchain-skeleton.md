@@ -21,9 +21,17 @@ They are a payment scheme built on top of blockchain technology where financial 
 
 ## The Walking Skeleton
 
-As our hackathon project we decided to present an end to end integration of our platform with stellar. We had a large pool of developers in our group so we decided to go ahead with a walking skeleton. So what is a walking skeleton?
+As our hackathon project, we decided to present an end to end integration of our platform with stellar. We had a large pool of developers in our group so we decided to go ahead with a walking skeleton. So what is a walking skeleton?
 
 > "A Walking Skeleton is a tiny implementation of the system that performs a small end-to-end function. It need not use the final architecture, but it should link together the main architectural components. The architecture and the functionality can then evolve in parallel." - Alistair Cockburn
 
-This meant creating an api to serve as an adapter between our domain and stellar, a web page where our agents could keep track of debits issued through stellar and another web page where our partners could view credits to their wallets. We also had an android developer in our team so we hooked this up to our android app for demonstration purposes and I was very satisfied with the outcome. Our project finished in the top 3 with the other two being related to fraud detection and fintech aid.
+This meant creating an API to serve as an adapter between our domain and stellar, a web page where our agents could keep track of debits issued through stellar and another web page where our partners could view credits to their wallets. We also had an android developer in our team so we hooked this up to our android app for demonstration purposes.
+
+I was very satisfied with the outcome and our project finished in the top 3 with the other two being related to fraud detection and fintech aid.
+
+
+## Is a spike a walking skeleton?
+
+This is only my personal opinion. I think a walking skeleton is bare bone end to end implementation whilst a spike is an investigation which may or may not require coding. I like both concepts and I use them when it makes sense to.
+
 
