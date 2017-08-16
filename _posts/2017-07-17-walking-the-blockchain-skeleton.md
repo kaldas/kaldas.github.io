@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Blockchain walking skeleton"
+title: "Walking the blockchain skeleton"
 date: 2017-03-17 12:00:00
 tags: Hackaton Blockchain Walking Skeleton
 category: blockchain
