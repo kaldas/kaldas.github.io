@@ -21,7 +21,7 @@ Now if you did all of the above correctly you should then be getting some repeat
 
 They are the concerns that are shared throughout the application. They are most likely technical tasks and this is where having shared libraries with their own release pipeline can work really well.
 
-When I joined WorldRemit the first task that I picked up involved changing how Logging was performed. Now tweaking Log4net was easy. The hard part of distributing the changes to some 20 projects. This is when we created a NuGet package that could be easily distributed and versioned. We ended up creating more of these packages and other teams started using and contributing to them. Alas identifying our cross-cutting concerns was very helpful to us.
+When I joined my past employer the first task that I picked up involved changing how Logging was performed. Now tweaking Log4net was easy. The hard part of distributing the changes to some 20 projects. This is when we created a NuGet package that could be easily distributed and versioned. We ended up creating more of these packages and other teams started using and contributing to them. Alas identifying our cross-cutting concerns was very helpful to us.
 
 Below is how our pipeline looked like:
 
@@ -33,13 +33,8 @@ Core concerns are the problem your domain is trying to solve. It's usually a bad
 
 The problem with this approach is that if the calculation of the quote changes then we must coordinate both systems to be released at the same time. This is where having an API providing a single source of truth would come useful.
 
-Usually a smell of this approach when a solution has a class library called "Core.Domain".
+Usually a smell of this approach is when a solution has a class library called "Core.Domain".
 
 ## The Ugly: drying any kind of concern to base classes
 
-The easiest way to explain inheritance versus composition is to understand the difference between frameworks and libraries... and the difference is Inversion of Control. When using a framework, the control of the application is being delegated upstream and this is exactly what base classes do. Now usually base classes are designed with some of its methods open to be overridden. The problem is that these methods are usually coupled to some other methods of the base class and you can’t change them and don’t have much visibility of what they do.
-
-
-## Final thoughts
-
-Shared code between projects is good for technical tasks (i.e client to connecting to Azure databases or Logging). 
+The easiest way to explain inheritance versus composition is to understand the difference between frameworks and libraries... and the difference is Inversion of Control. When using a framework, the control of the application is being delegated upstream and this is exactly what base classes do. Usually base classes are designed with some of its methods open to be overridden. The problem is these methods are usually coupled to some other methods of the base class that there is no visibility of and then the flow of control is going up and down. This is very bad for when trying to understand the intention of the application and for testing.
