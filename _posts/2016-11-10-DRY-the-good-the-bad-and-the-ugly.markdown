@@ -7,15 +7,15 @@ category:  software-engineering
 ---
 <!-- Start Writing Below in Markdown -->
 
-Many years ago I found a very wise principle called DRY. This is an acronym for Don't-Repeat-Yourself. It's easy to see why repeating behaviour around a code base will make it rigid to change. The outcome of doing DRY is that we end up with a lot of abstractions that can be shared and is this always a good idea? Well, not entirely and let's find out why...
+Many years ago I found a very wise principle called DRY. This is an acronym for Don't-Repeat-Yourself. It's easy to see why repeating behaviour around a code base will make it rigid to change. The outcome of doing DRY is that we end up with a lot of abstractions that can be shared between projects. In this post we will examine how Domain Driven Design can help us pick the best way of sharing code between our projects.
 
-## Understanding the value of simple procedural code
+## The value of simple procedural code
 
 ![Refactoring book cover]({{ site.url }}/img/CoverRefactoringBook.png)
 
 There is a book that I like very much called "Refactoring: Improving the Design of Existing Code" by Martin Fowler and Kent Beck. This book will show you some smells and how you can refactor them using design patterns and this is great but this is not what I like the most about this book. The best part of this book for me is when they teach you how to think. My favourite part is when they discuss the right moment of introducing a design pattern. They propose that code repetition is the foundation of all abstractions. This is because repeated code indicates the right moment of when to jump from the simplest procedural code to an abstraction. I believe this book was written in the 1990s before TDD was invented so if you are doing proper TDD i.e the simplest code that will make the test pass then this should be happening naturally. The problem of introducing design patterns head on is that usually, it overcomplicates what could have been a simple, elegant, intention revealing solution.
 
-Now if you did all of the above correctly you should then be getting some repeated code. When and how should you DRY it? This is where Domain Driven Design can help you. In DDD there is a concept of a Cross-cutting concerns and Core concerns. In the rest of this post we will look at both of them.
+Now if you did all of the above correctly you should then be getting some repeated code. How should you DRY it? This is where Domain Driven Design can help you. In DDD there is a concept of a Cross-cutting concerns and Core concerns. In the rest of this post we will look at both of them.
 
 ## The Good: drying Cross-cutting concerns to NuGet packages
 
