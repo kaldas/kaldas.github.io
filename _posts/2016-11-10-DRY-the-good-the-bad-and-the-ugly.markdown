@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      The Good, the Bad and the Ugly DRY principle
+title:      DRY. The Good, the Bad and the Ugly
 author:     Rod Caldas
 tags: 		DRY principle ddd software engineering
 category:  software-engineering
