@@ -21,7 +21,7 @@ They are a payment scheme built on top of blockchain technology where financial 
 
 ## The Walking Skeleton
 
-As our hackathon project, we decided to present an end to end integration of our platform with stellar. We had a large pool of developers in our group so we decided to go ahead with a walking skeleton. So what is a walking skeleton?
+We had a large pool of developers in our group so we decided to go ahead with a walking skeleton. So what is a walking skeleton?
 
 > "A Walking Skeleton is a tiny implementation of the system that performs a small end-to-end function. It need not use the final architecture, but it should link together the main architectural components. The architecture and the functionality can then evolve in parallel." - Alistair Cockburn
 
