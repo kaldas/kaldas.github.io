@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      CAP theorem and fast Microservices
+title:      CAP theorem and Microservices
 author:     Rod Caldas
 tags: 		Microservices DDD Cap theorem
 category:  software-engineering
