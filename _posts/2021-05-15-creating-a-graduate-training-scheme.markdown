@@ -14,15 +14,7 @@ Based on my observation, this is because:
 - Many senior engineers see training juniors as a hassle
 - Managers think onboarding juniors can slow down the delivery
 
-After a shift in policy, the Bank decided to start hiring graduates. I saw this as an opportunity to do something I am passionate about: to effect change in an organisation and impact the lives of those involved. I took ownership of this and set out to create a strategy that would be beneficial to all those involved. Below are my key findings.
-
-## Start small, then scale up
-
-We had many applicants and lots of open positions to fill. There was a temptation to start making lots of hires, but we had never tried our training scheme before. We decided to start small and make it work with only one graduate before scaling it up.
-
-## Prove them wrong
-
-I knew the concerns of onboarding a junior team to be inconveniencing senior devs or slow down delivery. So I tailored a training scheme in three steps precisely to avoid this.
+After a shift in policy, the Bank decided to start hiring graduates. I saw this as an opportunity to do something I am passionate about: to effect change in an organisation and impact the lives of those involved. I took ownership of this and set out to create a strategy that would be beneficial to all those involved. I knew the concerns of onboarding a junior team to be inconveniencing senior devs or slow down delivery. So I tailored a training scheme in three steps precisely to avoid this.
 
 ## First step: learning the fundamentals
 
@@ -58,4 +50,4 @@ The final step marked the conclusion of their onboarding. Graduates were free to
 
 ## Conclusion
 
-Add conclusion
+We had many applicants and lots of open positions to fill. There was a temptation to start making lots of hires, but we had never tried our training scheme before. We decided to start small and make it work with only one graduate before scaling it up. After one year I am happy to say our scheme was very successful.
