@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Walking the blockchain skeleton"
+author: Rod Caldas
 date: 2017-03-17 12:00:00
 tags: Hackaton Blockchain Walking Skeleton
 category: blockchain
