@@ -14,7 +14,7 @@ Oh, but customers loved the product? No - they hated it, and their TrustPilot lo
 
 And the worst of it: they burned $100 mil of investor cash in the process and had nothing to show for, and yes, that's one million dollars times a hundred. That's a lot of money!
 
-Spoiler alert: this is the story of how a group of software engineers managed to turn around a failing business by using DDD and DevOps practices.
+**Spoiler alert:** this is the story of how a group of software engineers managed to turn around a failing business by using DDD and DevOps practices.
 
 ## How they got to this
 
@@ -40,7 +40,7 @@ Sadly the original dev team had a lot of pressure from the investors to get some
 
 We were given one year to pivot and make the business commercially viable. The team knew it would have to create many new services quickly. We then gave a step back and decided to create a solid foundation that would allow devs to move fast. 
 
-**Domain-Driven Design at the centre of everything**
+## Domain-Driven Design at the centre of everything
 
 We moved away from the word "Service", and instead, we would have "Contexts". Humans like to anchor their thoughts around words, and this simple change in naming was to make sure they always had the domain model in mind when building a new service.
 
@@ -48,13 +48,13 @@ The ubiquitous language would dictate our bounded contexts, and those would be r
 
 Like a Pizza, there is no right or wrong way to pick ingredients you like. The elements for our Event Storming pizza would be Aggregates, Commands, Events and Policies. After a few sessions, we were able to flesh out what teams we needed to create and their mission.
 
-**Loose coupling through Event-Driven Architecture**
+## Loose coupling through Event-Driven Architecture
 
 The business had a complex financial domain, and it was prone to needing batch processing to run it like clockwork. A process would trigger an API request somewhere; this would, in turn, be coupled to another request where else and so on. The result of this request chain was some crazy coupling!
 
 We decided rather than pinning API requests to more requests, we would instead use Event-Driven Architecture. The team had a group of some of the most pragmatic software engineers I ever worked with. They thought the added complexity of implementing this architecture would simplify the solution because coupling would be significantly loose.
 
-**Removing Platform as a blocker**
+## Removing Platform as a blocker
 
 We couldn't afford to have much-needed Platform related tickets sitting in someone's queue for weeks. It would derail our entire project. There was a need for a scalable way to quickly spin new Contexts. 
 
@@ -62,7 +62,7 @@ We decided all Infrastructure and Pipelines should be scripted. This was no easy
 
 Infrastructure as code removed all paralysis caused by platform tickets. Pipeline as code cleared all the time wasted in configuring pipelines for new Contexts.
 
-**Why creating a Framework?**
+## Why creating a Framework?
 
 We had decided on using Event-Driven architecture, Infrastructure and Pipeline as Code. Now we needed a way to distribute this to different groups of software engineers.
 
