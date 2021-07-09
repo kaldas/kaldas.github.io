@@ -14,7 +14,7 @@ Oh, but customers loved the product? No - they hated it, and their TrustPilot lo
 
 And the worst of it: they burned $100 mil of investor cash in the process and had nothing to show for, and yes, that's one million dollars times a hundred. That's a lot of money!
 
-**Spoiler alert:** this is the story of how a group of software engineers managed to turn around a failing business by using DDD and DevOps practices.
+**Spoiler alert:** this story has a happy ending! This is the story of how a group of software engineers managed to turn around a failing business by using DDD and DevOps practices.
 
 ## How they got to this
 
