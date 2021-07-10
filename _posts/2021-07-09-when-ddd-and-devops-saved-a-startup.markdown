@@ -2,7 +2,7 @@
 layout: post
 title: "When DDD and DevOps saved a startup"
 author: Rod Caldas
-date: 2021-07-15 12:00:00
+date: 2021-07-10 12:00:00
 tags: DDD DevOps FinTech Startup
 category: mentoring
 featured_image: /images/cover.jpg
@@ -18,7 +18,7 @@ And the worst of it: they burned $100 mil of investor cash in the process and ha
 
 ## How they got to this
 
-When starting a new engagement, I enjoy quickly learning about the Domain and the codebase, but this was particularly hard. The last dev team didn't use the foundation of Domain-Driven Design when designing their Platform, and the codebase was rigid to change and counterintuitive to understand. I know DDD is hard. I'm not saying everyone should know how to do DDD because you don't really need to know DDD to reap the most benefits from DDD!
+They had a crumbling platform. When starting a new engagement, I enjoy quickly learning about the Domain and the codebase, but this was particularly hard. The last dev team didn't use the foundation of Domain-Driven Design when designing their Platform, and the codebase was rigid to change and counterintuitive to understand. I know DDD is hard. I'm not saying everyone should know how to do DDD because you don't really need to know DDD to reap the most benefits from DDD!
 
 The hard stuff like Anti-Corruption Layers, Aggregates, Events, Commands, Repositories are just implementation details, and not every project needs them. Surprisingly this usually comes to mind when people think of DDD!
 
@@ -38,7 +38,7 @@ We were given one year to pivot and make the business commercially viable. The t
 
 We moved away from the word "Service", and instead, we would have "Contexts". Humans like to anchor their thoughts around words, and this simple change in naming was to make sure they always had the domain model in mind when building a new service.
 
-The ubiquitous language would dictate our bounded contexts, and those would be represented in code by one or more Contexts. We identified a User bounded context. In code this was expressed by a UserPersonalIdentity context containing the User's identity as a person. We also had a UserDigitalIdentity context (the stuff the User logs in with). Later on, this was very helpful when onboarding customers from third-party providers who did not have a Digital Identity but had a Personal Identity.
+The ubiquitous language would dictate our bounded contexts. To illustrate this in code we had UserPersonalIdentity context containing the User's identity as a person. We also had a UserDigitalIdentity context for the stuff the User logs in with. Later on, this was very helpful when onboarding customers from third-party providers who did not have a Digital Identity but had a Personal Identity.
 
 Like a Pizza, there is no right or wrong way to pick ingredients you like. The elements for our Event Storming pizza would be Aggregates, Commands, Events and Policies. After a few sessions, we were able to flesh out what teams we needed to create and their mission.
 
@@ -61,7 +61,7 @@ We had decided on using Event-Driven architecture, Infrastructure and Pipeline a
 I know Frameworks have a terrible reputation. They are usually seen as a cookie-cutter approach to any problem instead of using the right tool for the job. But we weren't going to use someone else's Framework. Instead, we were going to build our own for this job.
 
 Originally our plan was:
-- Create a new project with a new Aggregate, sample Events and basic tests
+- Create a tool to spin a new project with a new Aggregate, sample Events and basic tests
 - Create all docker configuration
 - Add Infrastructure automation scripts for any dependencies
 - Add Pipeline automation scripts for this project
@@ -70,3 +70,5 @@ This worked really well, and then we created tooling to:
 
 - Add a new aggregate to an existing project
 - Update dependencies in a project
+
+## 
