@@ -30,7 +30,7 @@ This is how the business is going to have an advantage over the competition. Thi
 
 Sadly the original dev team had a lot of pressure from the investors to get something out very quickly, and they decided to buy a costly black-box solution to enable their core Domain. They also never gave a step back to build a strong foundation for the Platform. There was no tooling for anything, and everything was configured by point and click!
 
-## Three pillars of our turnaround strategy
+## Four pillars of our turnaround strategy
 
 We were given one year to pivot and make the business commercially viable. The team knew it would have to create many new services quickly. We then gave a step back and decided to create a solid foundation that would allow devs to move fast. 
 
@@ -38,9 +38,9 @@ We were given one year to pivot and make the business commercially viable. The t
 
 We moved away from the word "Service", and instead, we would have "Contexts". Humans like to anchor their thoughts around words, and this simple change in naming was to make sure they always had the domain model in mind when building a new service.
 
-The ubiquitous language would dictate our bounded contexts. To illustrate this in code we had UserPersonalIdentity context containing the User's identity as a person. We also had a UserDigitalIdentity context for the stuff the User logs in with. Later on, this was very helpful when onboarding customers from third-party providers who did not have a Digital Identity but had a Personal Identity.
+The ubiquitous language would dictate our bounded contexts. To illustrate this in code, we had UserPersonalIdentity context containing the User's identity as a person. We also had a UserDigitalIdentity context for the stuff the User logs in with. Later on, this was very helpful when onboarding customers from third-party providers who did not have a Digital Identity but had a Personal Identity.
 
-Like a Pizza, there is no right or wrong way to pick ingredients you like. The elements for our Event Storming pizza would be Aggregates, Commands, Events and Policies. After a few sessions, we were able to flesh out what teams we needed to create and their mission.
+Event Storming was our chosen tool to build a relationship with our stakeholders and flesh out our project. Like a Pizza, there is no right or wrong way to pick ingredients you like. The elements for our Event Storming pizza would be Aggregates, Commands, Events and Policies. After a few sessions, we were able to flesh out what teams we needed to create and their mission.
 
 ## 2) Loose coupling through Event-Driven Architecture
 
@@ -56,6 +56,8 @@ We decided all Infrastructure and Pipelines should be scripted. This was no easy
 
 Infrastructure as code removed all paralysis caused by platform tickets. Pipeline as code cleared all the time wasted in configuring pipelines for new Contexts.
 
+## 4) Creating a framework
+
 We had decided on using Event-Driven architecture, Infrastructure and Pipeline as Code. Now we needed a way to distribute this to different groups of software engineers.
 
 I know Frameworks have a terrible reputation. They are usually seen as a cookie-cutter approach to any problem instead of using the right tool for the job. But we weren't going to use someone else's Framework. Instead, we were going to build our own for this job.
@@ -63,7 +65,7 @@ I know Frameworks have a terrible reputation. They are usually seen as a cookie-
 Originally our plan was:
 - Create a tool to spin a new project with a new Aggregate, sample Events and basic tests
 - Create all docker configuration
-- Add Infrastructure automation scripts for any dependencies
+- Add Infrastructure automation scripts for any cloud resources
 - Add Pipeline automation scripts for this project
 
 This worked really well, and then we created tooling to:
@@ -71,4 +73,6 @@ This worked really well, and then we created tooling to:
 - Add a new aggregate to an existing project
 - Update dependencies in a project
 
-## 
+## Final Thoughts
+
+After an intense 12 month period, we had decommissioned the old platform, customers were happy, and the business was well on track to break even. 
