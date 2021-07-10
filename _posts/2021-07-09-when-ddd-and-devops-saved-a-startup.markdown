@@ -28,9 +28,11 @@ The three essential aspects of DDD: the Ubiquitous Language, the Bounded Context
 
 This is how the business is going to have an advantage over the competition. This is where it makes sense to build your own intellectual property: because you can make it whatever way you want it, thus earning an advantage over the competition. This is known as the core domain, and it can be beneficial in deciding what to build yourself and what to buy.
 
+![Types of Domains]({{ site.url }}/img/domain_types.png)
+
 Sadly the original dev team had a lot of pressure from the investors to get something out very quickly, and they decided to buy a costly black-box solution to enable their core Domain. They also never gave a step back to build a strong foundation for the Platform. There was no tooling for anything, and everything was configured by point and click!
 
-## Four pillars of our turnaround strategy
+## Four critical areas of our turnaround strategy
 
 We were given one year to pivot and make the business commercially viable. The team knew it would have to create many new services quickly. We then gave a step back and decided to create a solid foundation that would allow devs to move fast. 
 
@@ -40,7 +42,9 @@ We moved away from the word "Service", and instead, we would have "Contexts". Hu
 
 The ubiquitous language would dictate our bounded contexts. To illustrate this in code, we had UserPersonalIdentity context containing the User's identity as a person. We also had a UserDigitalIdentity context for the stuff the User logs in with. Later on, this was very helpful when onboarding customers from third-party providers who did not have a Digital Identity but had a Personal Identity.
 
-Event Storming was our chosen tool to build a relationship with our stakeholders and flesh out our project. Like a Pizza, there is no right or wrong way to pick ingredients you like. The elements for our Event Storming pizza would be Aggregates, Commands, Events and Policies. After a few sessions, we were able to flesh out what teams we needed to create and their mission.
+Event Storming was our chosen tool to build a relationship with our stakeholders and flesh out our project. Like a Pizza, there is no right or wrong way to pick ingredients you like. The elements for our Event Storming pizza would be Aggregates, Commands, Events and Policies. After a few sessions, we were able to plan what teams we needed to create and their mission.
+
+![Pizza ingredients]({{ site.url }}/img/pizza_ingredients.png)
 
 ## 2) Loose coupling through Event-Driven Architecture
 
@@ -80,3 +84,7 @@ After an intense 12 month period, we had decommissioned the old platform, custom
 The business became more stable and hired more product managers and delivery managers. Instead of Tech Leads managing the relationship with stakeholders, there would be PMs and DMs. Counterintuitively this had a particularly negative effect on the relationship with stakeholders. They felt their pains stopped being heard, and they got unhappy. People started escalating complaints to their C level executives, and this became a board level issue.
 
 I might be wrong, and I accept my opinion is based only on my personal observation. I believe when Tech Leads were managing stakeholders, it worked so well because they used Domain-Driven Design. The business experts had their hands on the product when moving cards around the Event Storming board. They felt their voices were being heard. They could see what the big picture was and what part of it teams were working on.
+
+The more experienced I get the more I see software engineering is about people than technology.
+
+Note: the pizza analogy might have been stolen from Alberto Brandolini - the creator of event storming
