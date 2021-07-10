@@ -73,5 +73,10 @@ This worked really well, and then we created tooling to:
 - Add a new aggregate to an existing project
 - Update dependencies in a project
 
-## 4) Creating a framework
-After an intense 12 month period, we had decommissioned the old platform, customers were happy, and the business was well on track to break even. 
+## Final Thoughts
+
+After an intense 12 month period, we had decommissioned the old platform, customers were happy, and the organisation was well on track to break even. 
+
+The business became more stable and hired more product managers and delivery managers. Instead of Tech Leads managing the relationship with stakeholders, there would be PMs and DMs. Counterintuitively this had a particularly negative effect on the relationship with stakeholders. They felt their pains stopped being heard, and they got unhappy. People started escalating complaints to their C level executives, and this became a board level issue.
+
+I might be wrong, and I accept my opinion is based only on my personal observation. I believe when Tech Leads were managing stakeholders, it worked so well because they used Domain-Driven Design. The business experts had their hands on the product when moving cards around the Event Storming board. They felt their voices were being heard. They could see what the big picture was and what part of it teams were working on.
