@@ -73,6 +73,5 @@ This worked really well, and then we created tooling to:
 - Add a new aggregate to an existing project
 - Update dependencies in a project
 
-## Final Thoughts
-
+## 4) Creating a framework
 After an intense 12 month period, we had decommissioned the old platform, customers were happy, and the business was well on track to break even. 
