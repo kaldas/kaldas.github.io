@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Another year another QCon"
+title: "Going to QCon this year"
 author: Rod Caldas
 date: 2023-05-11 12:00:00
 tags: QCon Conference
@@ -14,7 +14,7 @@ From the moment I arrived at the conference venue, I could feel the excitement a
 
 During the conference, I was particularly drawn to the track on building modern backends because it aligns closely with the work I have been doing. The speakers offered valuable insights and practical advice on how to build scalable and efficient backends using the latest technologies and best practices.
 
-I had the opportunity to attend a talk that focused on the topic of moving from cloud-hosted to cloud-native solutions. The speaker, a seasoned expert in the field, shared his insights and experiences in helping companies transition their applications and infrastructure to cloud-native environments.
+I had the opportunity to attend a talk that focused on the topic of moving from cloud-hosted to cloud-native solutions. The speaker, a seasoned expert in the field, shared her insights and experiences in helping companies transition their applications and infrastructure to cloud-native environments.
 
 What particularly caught my attention was the speaker's emphasis on the importance of understanding the benefits and challenges of cloud-native solutions before making the transition. She highlighted that while cloud-native solutions offer many advantages, such as greater scalability and flexibility, they require a different approach to application design and development.
 
